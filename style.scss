@@ -74,7 +74,7 @@ section {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
-  color: $color_2;
+  color: $color_3;
 }
 .header {
   position: fixed;
@@ -425,6 +425,8 @@ section {
     }
   }
 }
+
+// flip cards mark
 .packages-container {
   background: #eee;
 }
@@ -446,7 +448,7 @@ section {
         background: #10221b;
         .content {
           > * {
-            color: $color_2;
+            color: $color_3;
           }
         }
         .btn {
