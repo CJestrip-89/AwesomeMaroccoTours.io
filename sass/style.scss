@@ -76,6 +76,7 @@ section {
   font-size: 4rem;
   color: $color_3;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -116,7 +117,7 @@ section {
     #nav-close {
       font-size: 5rem;
       cursor: pointer;
-      color: $color_1;
+      color: $color_3;
       display: none;
     }
   }
@@ -146,10 +147,10 @@ section {
   }
 }
 
-// .header-scrolled {
-//   background-color: black;
-//   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-// }
+.header-scrolled {
+  background-color: $background-color_2;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
 
 .header.active {
   background: #fff;
@@ -428,8 +429,135 @@ section {
 
 // flip cards mark
 .packages-container {
-  background: #eee;
+  background: #f6f6f6;
 }
+// *************
+$color_1: #fff;
+$background-color_1: #fff;
+
+/* .box___side--front-1 {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.box___side--front-2 {
+  background: linear-gradient(-45deg, #f321d7, #ffec61);
+}
+
+.box__side--front-3 {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+} */
+/* 
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+*/
+/* .box__side--back-2 {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+} */
+/* .box__side--back-3 {
+  background: linear-gradient(-45deg, #9a4eff, #24ff72);
+} */
+.box-card {
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+}
+.box__side {
+  height: 52rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.box___side--front {
+  background-color: $background-color_1;
+}
+.box__side--back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.box__side--back-1 {
+  background: linear-gradient(-45deg, #ffb900, #ff7730);
+}
+.box {
+  &:hover {
+    .box__side--front-1 {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+    }
+    .box__side--front-2 {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+    }
+    .box__side--front-3 {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+    }
+    .box__side--back {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+  }
+}
+.box__title {
+  height: 20rem;
+  padding: 4rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.box__heading {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color_1;
+  width: 75%;
+}
+.box__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.box__details {
+  padding: 0 2rem 2rem;
+  color: $color_2;
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+}
+
+// *************
 .packages {
   .box-container {
     display: -ms-grid;
@@ -439,13 +567,13 @@ section {
     gap: 1.5rem;
     .box {
       text-align: center;
-      background: #fff;
-      border: 0.2rem solid #10221b;
-      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      border-radius: 0.5rem;
+      // background: #fff;
+      // border: 0.2rem solid #10221b;
+      // -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      // border-radius: 0.5rem;
       &:hover {
-        background: #10221b;
+        // background: #10221b;
         .content {
           > * {
             color: $color_3;
@@ -605,7 +733,7 @@ section {
       border-radius: 0.5rem;
     }
     .icons {
-      background: #10221b;
+      background: $color_2;
       border-radius: 0.5rem;
       padding: 1rem;
       position: relative;
