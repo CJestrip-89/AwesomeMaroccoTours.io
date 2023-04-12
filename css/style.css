@@ -72,6 +72,8 @@ section {
     font-weight: bolder; }
     .header .logo i {
       color: #ff5100; }
+  .header .logo-img__scroll {
+    height: 9.5rem; }
   .header .navbar a {
     margin-left: 2rem;
     font-size: 1.7rem;
@@ -102,7 +104,13 @@ section {
 
 .header-scrolled {
   background-color: #f8f5f4;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  height: 12.5%; }
+
+.scroll-text .navbar a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #10221b; }
 
 .header.active {
   background: #fff;
@@ -727,7 +735,8 @@ $color-secondary-dark: #ff7730;
     justify-content: center; }
     .header .navbar a {
       margin: 1rem 0;
-      font-size: 3rem; }
+      font-size: 3rem;
+      color: #ff5100; }
     .header .navbar #nav-close {
       display: block;
       position: absolute;
