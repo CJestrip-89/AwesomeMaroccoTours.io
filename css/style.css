@@ -32,15 +32,15 @@ section {
 .btn {
   margin-top: 1rem;
   display: inline-block;
-  border: 0.2rem solid #fff;
-  color: #fff;
+  border: 0.2rem solid #ff5100;
+  color: #ff5100;
   cursor: pointer;
   background: none;
   font-size: 1.7rem;
   padding: 1rem 3rem; }
   .btn:hover {
-    background: #fff;
-    color: #ff5100;
+    background: #ff5100;
+    color: #fff;
     border: 0.2rem solid #ff5100; }
 
 .heading {
@@ -66,12 +66,9 @@ section {
     -ms-flex-align: center;
     align-items: center; }
   .header .logo {
-    margin-right: auto;
-    font-size: 2.5rem;
-    color: #ff5100;
-    font-weight: bolder; }
-    .header .logo i {
-      color: #ff5100; }
+    margin-right: auto; }
+  .header .logo-img {
+    height: 9.5rem; }
   .header .logo-img__scroll {
     height: 9.5rem; }
   .header .navbar a {
@@ -103,19 +100,15 @@ section {
     display: none; }
 
 .header-scrolled {
-  background-color: #f8f5f4;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   height: 12.5%; }
 
 .scroll-text .navbar a {
   margin-left: 2rem;
   font-size: 1.7rem;
   color: #10221b; }
-
-.header.active {
-  background: #fff;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
 
 .search-form {
   position: fixed;
@@ -204,15 +197,15 @@ section {
       padding-top: 0.5rem;
       text-transform: uppercase; }
     .home .box .content p {
-      line-height: 2;
+      line-height: 1.5;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding: 1rem 0; }
 
 .home .box.second {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .home .box.third {
   -webkit-box-pack: start;
@@ -573,6 +566,17 @@ $color-secondary-dark: #ff7730;
   .reviews .slide .user span {
     color: #ff5100;
     font-size: 1.5rem; }
+
+.gallery .Gallery-container {
+  columns: 4 25rem;
+  column-gap: 1.5rem; }
+  .gallery .Gallery-container .imageBx {
+    margin: 1rem;
+    break-inside: avoid; }
+    .gallery .Gallery-container .imageBx img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem; }
 
 .blogs .slide {
   text-align: center;

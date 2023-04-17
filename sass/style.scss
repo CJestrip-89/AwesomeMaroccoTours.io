@@ -58,15 +58,15 @@ section {
 .btn {
   margin-top: 1rem;
   display: inline-block;
-  border: 0.2rem solid $color_2;
-  color: $color_2;
+  border: 0.2rem solid $color_3;
+  color: $color_3;
   cursor: pointer;
   background: none;
   font-size: 1.7rem;
   padding: 1rem 3rem;
   &:hover {
-    background: $color_2;
-    color: $color_3;
+    background: $color_3;
+    color: $color_2;
     border: 0.2rem solid $color_3;
   }
 }
@@ -97,12 +97,17 @@ section {
   }
   .logo {
     margin-right: auto;
-    font-size: 2.5rem;
-    color: $color_3;
-    font-weight: bolder;
-    i {
-      color: $color_3;
-    }
+
+    // font-size: 2.5rem;
+    // color: $color_3;
+    // font-weight: bolder;
+    // i {
+    //   color: $color_3;
+    // }
+  }
+
+  .logo-img {
+    height: 9.5rem;
   }
 
   .logo-img__scroll {
@@ -153,8 +158,9 @@ section {
 }
 
 .header-scrolled {
-  background-color: $background-color_2;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   height: 12.5%;
 }
 
@@ -164,11 +170,11 @@ section {
   color: $color_1;
 }
 
-.header.active {
-  background: #fff;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
+// .header.active {
+//   background: #fff;
+//   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+// }
 .search-form {
   position: fixed;
   top: 0;
@@ -269,17 +275,17 @@ section {
         text-transform: uppercase;
       }
       p {
-        line-height: 2;
+        line-height: 1.5;
         color: $color_2;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem 0;
       }
     }
   }
   .box.second {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   .box.third {
@@ -733,6 +739,25 @@ $color-secondary-dark: #ff7730;
     }
   }
 }
+
+// Gallery Section Start
+
+.gallery .Gallery-container {
+  columns: 4 25rem;
+  column-gap: 1.5rem;
+  .imageBx {
+    margin: 1rem;
+    break-inside: avoid;
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Gallery Section end
+
 .blogs {
   .slide {
     text-align: center;
