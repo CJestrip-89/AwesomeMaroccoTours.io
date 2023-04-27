@@ -23,6 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Custom css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <!-- logo icon -->
     <link rel="shortcut icon" type="image/png" href="images/Businesslogo.png" />
     <!-- <script src="js/script.js"></script> -->
@@ -41,7 +42,8 @@
           <div id="nav-close" class="fas fa-times"></div>
           <a href="#home">home</a>
           <a href="#about">about</a>
-          <a href="#packages">packages</a>
+          <a href="#destinations">destinations</a>
+          <!-- <a href="#packages">packages</a> -->
           <a href="#excursions">Excursions</a>
           <a href="#reviews">reviews</a>
           <a href="#gallery">Gallery</a>
@@ -63,7 +65,11 @@
           <div
             class="swiper-slide"
             style="
-              background: url(images/pexels-boris-ulzibat-5614643.jpg) no-repeat;
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.3)
+                ),
+                url(images/pexels-boris-ulzibat-5614643.jpg) no-repeat;
               background-position: center;
               background-size: cover;
             "
@@ -73,10 +79,10 @@
                 <span>make tour</span>
                 <h3>amazing</h3>
                 <p>
-                  Experience the breathtaking beauty and rich culture of Morocco
-                  with our guided tours.
+                  Explore the stunning beauty and culture of Morocco with our
+                  guided tours
                 </p>
-                <a href="#" class="btn">get started</a>
+                <a href="#about" class="btn">get started</a>
               </div>
             </section>
           </div>
@@ -84,7 +90,11 @@
           <div
             class="swiper-slide"
             style="
-              background: url(images/marrakech-g84519e21e_1920.jpg) no-repeat;
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(images/home-slider-img2.jpg) no-repeat;
               background-position: center;
               background-size: cover;
             "
@@ -94,13 +104,11 @@
                 <span>never stop</span>
                 <h3>exploring</h3>
                 <p>
-                  Our expert guides will take you on a journey through the
-                  bustling streets of Marrakech, the scenic landscapes of the
-                  Atlas Mountains, and the exotic markets of Fez. With years of
-                  experience in the tourism industry, we offer a wide range of
-                  tour packages that cater to all interests and budgets.
+                  Our experienced guides will lead you through the vibrant
+                  streets of Marrakech, picturesque Atlas Mountains, and lively
+                  markets of Fez
                 </p>
-                <a href="#" class="btn">get started</a>
+                <a href="#about" class="btn">get started</a>
               </div>
             </section>
           </div>
@@ -108,7 +116,11 @@
           <div
             class="swiper-slide"
             style="
-              background: url(images/home-bg-4.jpg) no-repeat;
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.2),
+                  rgba(0, 0, 0, 0.2)
+                ),
+                url(images/home-bg-4.jpg) no-repeat;
               background-position: center;
               background-size: cover;
             "
@@ -118,11 +130,11 @@
                 <span>explore the</span>
                 <h3>new world</h3>
                 <p>
-                  Whether you're looking for an adventure-packed tour or a
-                  leisurely holiday, we've got you covered. Book now and embark
-                  on a once-in-a-lifetime adventure in Morocco!"
+                  We offer various tour packages for all budgets and interests,
+                  from adventure-packed to leisurely. Book now and embark on an
+                  unforgettable journey in Morocco!
                 </p>
-                <a href="#" class="btn">get started</a>
+                <a href="#about" class="btn">get started</a>
               </div>
             </section>
           </div>
@@ -137,13 +149,6 @@
     <!-- about section starts -->
     <div class="about-container">
       <section class="about" id="about">
-        <div class="image">
-          <img
-            src="images/WhatsApp-Image-2022-07-24-at-11.22.26-PM-300x225.jpeg"
-            alt=""
-          />
-        </div>
-
         <div class="content">
           <h3>Mr . Tayi Hicham</h3>
           <p>
@@ -161,20 +166,136 @@
             Italian, and Spanish speaking guides. For other languages, please
             email us or WhatsApp . Contact the expert Tayi hicham
           </p>
-          <a href="#" class="btn">read more</a>
+          <!-- <a href="#" class="btn">read more</a> -->
+        </div>
+
+        <div class="image">
+          <img
+            src="images/WhatsApp-Image-2022-07-24-at-11.22.26-PM-300x225.jpeg"
+            alt=""
+          />
         </div>
       </section>
     </div>
     <!-- about section end -->
+    <section class="shop" id="shop">
+      <h1 class="heading">Popular Destinations</h1>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/package/images/Marrakech-img.jpg" alt="" />
+              <div class="icons">
+                <h2>Marrakech</h2>
+                <a href="#" class="btn">Learn More</a>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a> -->
+              </div>
+            </div>
+            <!-- <div class="content">
+              <h3>Marrakech</h3>
+              <div class="price">$5.00 - $25.00</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="package/images/Fes-img.jpg" alt="" />
+              <div class="icons">
+                <h2>Fes</h2>
+                <a href="#" class="btn">Learn More</a>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a> -->
+              </div>
+            </div>
+
+            <!-- <div class="content">
+              <h3>Fez</h3>
+              <div class="price">$5.00 - $25.00</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="package/images/Casablanka-img.jpg" alt="" />
+              <div class="icons">
+                <h2>Casablanca</h2>
+                <a href="#" class="btn">Learn More</a>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a> -->
+              </div>
+            </div>
+            <!-- <div class="content">
+              <h3>Casablanca</h3>
+              <div class="price">$5.00 - $25.00</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="package/images/Tanger-img.jpg" alt="" />
+              <div class="icons">
+                <h2>Tanger</h2>
+                <a href="#" class="btn">Learn More</a>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a> -->
+              </div>
+            </div>
+            <!-- <div class="content">
+              <h3>Tangier</h3>
+              <div class="price">$5.00 - $25.00</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <br />
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+    </section>
+    <!-- Packages Section start -->
+
+    <!-- Packages Section End -->
 
     <!-- Packages Section start -->
-    <div class="packages-container">
+    <!-- <div class="packages-container">
       <section class="packages" id="packages">
         <h1 class="heading">Popular packages</h1>
 
         <div class="box-container">
-          <!-- New Box mark up -->
-
           <div class="box box-card">
             <div
               class="box__side box__side--front-1"
@@ -196,8 +317,6 @@
                   <li>3 days 2 night from marrakech merzouga endingi n fes</li>
                   <li>3 days 2 night desert tour from marrakech to merzouga</li>
                   <li>Marrakech back to Marrakech 8 night</li>
-                  <!-- <li>TExt placehoder</li>
-                  <li>TExt placehoder</li> -->
                 </ul>
                 <a href="#popup" class="btn btn--white">Select</a>
               </div>
@@ -258,56 +377,142 @@
               </div>
             </div>
           </div>
-
-          <!-- New Box mark up -->
         </div>
       </section>
-    </div>
+    </div> -->
 
     <!-- Packages Section end -->
+    <!-- Shop -->
+
+    <!--  -->
+
+    <!-- Destination section Start-->
+
+    <!-- <div class="box-container">
+          <div class="box box-card">
+            <div
+              class="box__side box__side--front-1"
+              style="
+                background: url(images/miltiadis-fragkidis-ILxHs003uMc-unsplash.jpg)
+                  no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              <div class="box__title box__title--1">
+                <h4 class="box__heading">Marrakech</h4>
+              </div>
+            </div>
+            <div class="box__side box__side--back box__side--back-1">
+              <div class="box__details">
+                <ul>
+                  <li>2-days-1-night-from-marrakech-to-zagoura</li>
+                  <li>3 days 2 night from marrakech merzouga endingi n fes</li>
+                  <li>3 days 2 night desert tour from marrakech to merzouga</li>
+                  <li>Marrakech back to Marrakech 8 night</li>
+                </ul>
+                <a href="#popup" class="btn btn--white">Select</a>
+              </div>
+            </div>
+          </div> -->
+    <!-- <section
+      class="package-destinations destinations-container"
+      id="destinations"
+    >
+      <h1 class="heading">Popular Tour Destinations</h1>
+      <p>Chose your next destination</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="img_text">
+            <img src="/package/images/Marrakech-img.jpg" />
+            <div class="info">
+              <h1>Marrakech</h1>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img_text">
+            <img src="/package/images/Fes-img.jpg" />
+            <div class="info">
+              <h1>Fez</h1>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img_text">
+            <img src="/package/images/Tanger-img.jpg" />
+            <div class="info">
+              <h1>Tanger</h1>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img_text">
+            <img src="/package/images/Casablanka-img.jpg" />
+            <div class="info">
+              <h1>Casablanca</h1>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Destination section end -->
+
     <!-- Activities Section Start  -->
-    <section class="category">
+    <section class="category" id="excursions">
       <h1 class="heading">Activities and Excursions</h1>
 
       <div class="box-container">
         <div class="box">
-          <img src="images/pexels-tima-miroshnichenko-5976864.jpg" alt="" />
+          <img
+            src="assets/WhatsApp-Image-2022-07-17-at-6.53.35-PM.jpeg"
+            alt=""
+          />
           <h3>ATV</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
-            id.
+            Gear up for an amazing quad biking adventure through the picturesque
+            Palmeraie.
           </p>
-          <a href="#" class="btn">read more</a>
+          <a href="#popup__ATV" class="btn">read more</a>
         </div>
 
         <div class="box">
-          <img src="images/HotairBalloon.jpg" alt="" />
+          <img src="assets/IMG-20200106-WA0005-1024x768.jpg" alt="" />
           <h3>Hot Air Balloon</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
-            id.
+            Enjoy a scenic hot air balloon flight over Marrakech and feast on a
+            traditional breakfast upon landing.
           </p>
-          <a href="#" class="btn">read more</a>
+          <a href="#popup__air-balloon" class="btn">read more</a>
         </div>
 
         <div class="box">
-          <img src="images/Camelimg.jpg" alt="" />
+          <img
+            src="assets/60e35c69ac94a5b21ef9942d_60a162794dfea00ff5cc2d75_128052935-1-1024x631.jpeg"
+            alt=""
+          />
           <h3>Camel Desert Tour</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
-            id.
+            Embark on a day trip from Marrakech to explore the Agafay Desert and
+            Atlas Mountains, including a camel ride.
           </p>
-          <a href="#" class="btn">read more</a>
+          <a href="#popup__desert-tour" class="btn">read more</a>
         </div>
 
         <div class="box">
           <img src="images/HikingSite.jpeg" alt="" />
-          <h3>Hikes</h3>
+          <h3>Hike Tours</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
-            id.
+            Go on a guided hiking tour through the majestic Atlas Mountains from
+            Marrakech and take in the stunning scenery.
           </p>
-          <a href="#" class="btn">read more</a>
+          <a href="#popup__hikes" class="btn">read more</a>
         </div>
       </div>
     </section>
@@ -383,9 +588,6 @@
 
     <!-- Gallery section ends-->
 
-    <!-- booking forms section starts -->
-    <!-- booking forms section ends-->
-
     <!-- footer section starts  -->
     <footer
       class="footer"
@@ -409,10 +611,22 @@
         <div class="box-container">
           <div class="box">
             <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fa fa-tripadvisor"></i>Tripadvisor</a>
+            <a
+              href="https://www.instagram.com/awesome_morocco_tours/?r=nametag"
+            >
+              <i class="fab fa-instagram"></i> instagram
+            </a>
+            <a href="https://www.facebook.com/AwesomeMoroccoTours">
+              <i class="fab fa-facebook-f"></i> facebook
+            </a>
+            <a href="https://twitter.com/tayihicham2">
+              <i class="fab fa-twitter"></i> twitter
+            </a>
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g293734-d7175761-Reviews-Awesome_Morocco_Tours-Marrakech_Marrakech_Safi.html"
+            >
+              <i class="fa fa-tripadvisor"></i>Tripadvisor</a
+            >
           </div>
           <div class="box">
             <h3>contact info</h3>
@@ -427,10 +641,12 @@
             <h3>quick links</h3>
             <a href="#home">home</a>
             <a href="#about">about</a>
+            <a href="#destinations">destinations</a>
+            <a href="#excursions">excursions</a>
             <!-- <a href="#shop">shop</a> -->
-            <a href="#packages">packages</a>
-            <a href="#testimonials">reviews</a>
-            <a href="#blogs">blogs</a>
+            <!-- <a href="#packages">packages</a> -->
+            <a href="#reviews">reviews</a>
+            <a href="#gallery">gallery</a>
           </div>
 
           <div class="box">
@@ -451,6 +667,175 @@
     </footer>
 
     <!-- footer section ends -->
+
+    <!-- Activities Popup Start -->
+    <div class="popup" id="popup__ATV">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="/assets/WhatsApp-Image-2022-07-17-at-6.53.36-PM-1.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="/assets/WhatsApp-Image-2022-06-22-at-11.42.06-PM.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <!-- <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2> -->
+          <!-- <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3> -->
+          <p class="popup__text">
+            Embark on a 2-hour quad biking adventure through the Palmeraie
+            oasis, passing through Berber villages, the Tansift river, and
+            thousands of palm trees. Enjoy a tea break at a local home before
+            continuing the exploration. The activity includes pickup from and
+            drop-off at your accommodation in Marrakech.
+          </p>
+          <!-- <p>
+            Highlights:
+            <ul>
+              <li>Enjoy the quad biking around the Marrakesh Palmeraie
+
+              </li>
+              <li>SeeBerber villages.</li>
+              <li>Get a cup of Mint team and homemade creps</li>
+              <li>Get a cup of Mint team and homemade creps</li>
+              <li>Pick up and drop of at your hotel in Marrakech</li>
+            </ul>
+          </p> -->
+          <!-- <a href="#" class="btn btn--green">Book now</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup__air-balloon">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="/assets/389-hot-air-balloon-marrakech-3.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="/assets/640-hot-air-balloon-marrakech-7.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <!-- <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2> -->
+          <!-- <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3> -->
+          <p class="popup__text">
+            Watch the sun rise over red dust, palm groves, and majestic open
+            landscapes from a hot air balloon. Flying with a small group of
+            travelers and live commentary from your veteran pilot, soak up the
+            sights as you glide through the air, then refuel with an authentic
+            Berber breakfast in a Moroccan tent. For ease, your tour includes
+            door-to-door round-trip transfers. Soak up a spectacular sunrise
+            from a hot air balloon Enjoy a more intimate experience in a small
+            group Savor a Berber breakfast in a traditional tent Take it easy
+            with door-to-door round-trip transfers from Marrakech hotels
+          </p>
+          <!-- <a href="#" class="btn btn--green">Book now</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup__desert-tour">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="/assets/Merzouga-Luxury-Desert-Camp-1024x768.webp"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="/assets/1_85861_02-1024x576.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <!--  <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3> -->
+          <p class="popup__text">
+            You don’t have to go to the Sahara for a Moroccan desert experience
+            – the Agafay Desert is a desert oasis just outside of Marrakech. On
+            this full-day tour, soak up the scenery as you travel through the
+            High Atlas Mountains, stop to explore local villages and visit a
+            Berber souk, then hop on for a thrilling camel ride through the
+            desert rock of Agafay. Spectacular views and photo ops in the Atlas
+            Mountains Ride a camel through the Agafay Desert Convenient pickup
+            and drop-off from your hotel in Marrakech
+          </p>
+          <!-- <a href="#" class="btn btn--green">Book now</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup__hikes">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="/assets/60e35c69ac94a5bc50f9942a_60a16273ea836635aa97fb45_167780772.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="/assets//60e35c69ac94a5dca0f9942c_60a16279d99018b9cf8b22ee_129576613.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <!--  <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3> -->
+          <p class="popup__text">
+            Embark on a guided hiking tour through the majestic Atlas Mountains
+            from Marrakech and immerse yourself in the awe-inspiring natural
+            beauty of Morocco's highest mountain range. As you hike, you will be
+            surrounded by stunning panoramic views of the rugged mountains,
+            rocky cliffs, and lush valleys that stretch out before you. Your
+            knowledgeable guide will lead you on a journey through traditional
+            Berber villages, where you can experience the local culture and
+            hospitality firsthand. Along the way, you'll encounter a diverse
+            range of landscapes, from verdant forests and meadows to rugged
+            peaks and steep canyons. Take a break at one of the picturesque
+            mountain streams or waterfalls to refresh yourself and soak in the
+            peaceful ambiance of this pristine wilderness. Your guide will
+            provide interesting insights into the region's history, geology, and
+            wildlife, making this an educational as well as a scenic experience.
+            At the end of your tour, you'll be rewarded with a sense of
+            accomplishment and a deeper appreciation for the natural wonders of
+            the Atlas Mountains.
+          </p>
+          <!-- <a href="#" class="btn btn--green">Book now</a> -->
+        </div>
+      </div>
+    </div>
+    <!-- Destinations Popup Start -->
+
+    <!-- Destinations Popup Start -->
     <script src="index.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
   </body>
