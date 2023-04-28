@@ -76,34 +76,13 @@ var swiper = new Swiper(".home-slider", {
   },
 });
 
-// var swiper = new Swiper(".product-slider", {
-//   loop: true,
-//   grabCursor: true,
-//   spaceBetween: 20,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     640: {
-//       slidesPerView: 2,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//     },
-//     1024: {
-//       slidesPerView: 4,
-//     },
-//   },
-// });
 var swiper = new Swiper(".product-slider", {
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  loop: true,
+  spaceBetween: 20,
+  clickable: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: {
@@ -120,26 +99,6 @@ var swiper = new Swiper(".product-slider", {
     },
   },
 });
-// var swiper = new Swiper(".review-slider", {
-//   loop: true,
-//   grabCursor: true,
-//   spaceBetween: 20,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     640: {
-//       slidesPerView: 2,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
 
 const popup = document.querySelector(".popup");
 const closePopup = () => {

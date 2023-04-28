@@ -743,10 +743,13 @@ section {
     left: 0;
     -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8); }
-  .swiper-button-next::after {
-    display: none; }
-  .swiper-button-prev::after {
-    display: none; } }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; } }
 
 @media (max-width: 450px) {
   html {
