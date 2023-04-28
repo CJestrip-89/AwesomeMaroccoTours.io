@@ -140,3 +140,9 @@ var swiper = new Swiper(".product-slider", {
 //     },
 //   },
 // });
+
+const popup = document.querySelector(".popup");
+const closePopup = () => {
+  document.querySelector(".popup__close").click();
+};
+popup.addEventListener("click", closePopup);
